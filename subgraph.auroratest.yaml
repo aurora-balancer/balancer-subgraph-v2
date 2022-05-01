@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Vault
-    network: mainnet
+    network: aurora
     source:
       address: '0x571bb52a678C220De80f5576659E384586119289'
       abi: Vault
@@ -47,7 +47,7 @@ dataSources:
           handler: handleInternalBalanceChange
   - kind: ethereum/contract
     name: WeightedPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0xE54C106638E1B8C9C28A8864f2Ef1DD69F333499'
       abi: WeightedPoolFactory
@@ -74,7 +74,7 @@ dataSources:
           handler: handleNewWeightedPool
   - kind: ethereum/contract
     name: WeightedPool2TokenFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x4172d9B129A396Bc234b3d288a5fa45698C6d148'
       abi: WeightedPoolFactory
@@ -101,7 +101,7 @@ dataSources:
           handler: handleNewWeightedPool
   - kind: ethereum/contract
     name: StablePoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x4BeEde7452b2c0274B4619C71f02f963fDD2e97E'
       abi: StablePoolFactory
@@ -128,7 +128,7 @@ dataSources:
           handler: handleNewStablePool
   - kind: ethereum/contract
     name: MetaStablePoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x67d27634E44793fE63c467035E31ea8635117cd4'
       abi: MetaStablePoolFactory
@@ -157,7 +157,7 @@ dataSources:
           handler: handleNewMetaStablePool
   - kind: ethereum/contract
     name: LiquidityBootstrappingPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE'
       abi: LiquidityBootstrappingPoolFactory
@@ -186,7 +186,7 @@ dataSources:
           handler: handleNewLiquidityBootstrappingPool
   - kind: ethereum/contract
     name: TempLiquidityBootstrappingPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x0F3e0c4218b7b0108a3643cFe9D3ec0d4F57c54e'
       abi: LiquidityBootstrappingPoolFactory
@@ -215,7 +215,7 @@ dataSources:
           handler: handleNewLiquidityBootstrappingPool
   - kind: ethereum/contract
     name: InvestmentPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0x48767F9F868a4A7b86A90736632F6E44C2df7fa9'
       abi: InvestmentPoolFactory
@@ -244,7 +244,7 @@ dataSources:
           handler: handleNewInvestmentPool
   - kind: ethereum/contract
     name: ConvergentPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0xb7561f547F3207eDb42A6AfA42170Cd47ADD17BD'
       abi: ConvergentPoolFactory
@@ -271,7 +271,7 @@ dataSources:
           handler: handleNewCCPPool
   - kind: ethereum/contract
     name: StablePhantomPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0xb08E16cFc07C684dAA2f93C70323BAdb2A6CBFd2'
       abi: StablePhantomPoolFactory
@@ -300,7 +300,7 @@ dataSources:
           handler: handleNewStablePhantomPool
   - kind: ethereum/contract
     name: AaveLinearPoolFactory
-    network: mainnet
+    network: aurora
     source:
       address: '0xD7FAD3bd59D6477cbe1BE7f646F7f1BA25b230f8'
       abi: AaveLinearPoolFactory
@@ -330,7 +330,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: WeightedPool
-    network: mainnet
+    network: aurora
     source:
       abi: WeightedPool
     mapping:
@@ -355,7 +355,7 @@ templates:
           handler: handleSwapFeePercentageChange
   - kind: ethereum/contract
     name: StablePool
-    network: mainnet
+    network: aurora
     source:
       abi: StablePool
     mapping:
@@ -386,7 +386,7 @@ templates:
           handler: handleAmpUpdateStopped
   - kind: ethereum/contract
     name: MetaStablePool
-    network: mainnet
+    network: aurora
     source:
       abi: MetaStablePool
     mapping:
@@ -424,7 +424,7 @@ templates:
           handler: handlePriceRateCacheUpdated
   - kind: ethereum/contract
     name: ConvergentCurvePool
-    network: mainnet
+    network: aurora
     source:
       abi: ConvergentCurvePool
     mapping:
@@ -449,7 +449,7 @@ templates:
           handler: handleTransfer
   - kind: ethereum/contract
     name: LiquidityBootstrappingPool
-    network: mainnet
+    network: aurora
     source:
       abi: LiquidityBootstrappingPool
     mapping:
@@ -479,7 +479,7 @@ templates:
           handler: handleGradualWeightUpdateScheduled
   - kind: ethereum/contract
     name: InvestmentPool
-    network: mainnet
+    network: aurora
     source:
       abi: InvestmentPool
     mapping:
@@ -513,7 +513,7 @@ templates:
           handler: handlePausedStateChanged
   - kind: ethereum/contract
     name: StablePhantomPool
-    network: mainnet
+    network: aurora
     source:
       abi: StablePhantomPool
     mapping:
@@ -551,7 +551,7 @@ templates:
           handler: handlePriceRateCacheUpdated
   - kind: ethereum/contract
     name: LinearPool
-    network: mainnet
+    network: aurora
     source:
       abi: LinearPool
     mapping:

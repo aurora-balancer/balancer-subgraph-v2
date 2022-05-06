@@ -1,3 +1,38 @@
+auroratest:
+  network: aurora
+  Vault:
+    address: "0x571bb52a678C220De80f5576659E384586119289"
+    startBlock: 87972326
+  WeightedPoolFactory:
+    address: "0xE54C106638E1B8C9C28A8864f2Ef1DD69F333499"
+    startBlock: 87973033
+  WeightedPool2TokenFactory:
+    address: "0x4172d9B129A396Bc234b3d288a5fa45698C6d148"
+    startBlock: 87973040
+  StablePoolFactory:
+    address: "0x4BeEde7452b2c0274B4619C71f02f963fDD2e97E"
+    startBlock: 87973053
+  # MetaStablePoolFactory:
+  #   address: "0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca"
+  #   startBlock: 17913016
+  # LiquidityBootstrappingPoolFactory:
+  #   address: "0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE"
+  #   startBlock: 17116402
+  # TempLiquidityBootstrappingPoolFactory:
+  #   address: "0x41B953164995c11C81DA73D212ED8Af25741b7Ac"
+  #   startBlock: 22067480
+  # InvestmentPoolFactory:
+  #   address: "0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193"
+  #   startBlock: 19404118
+  # StablePhantomPoolFactory:
+  #   address: "0xC128a9954e6c874eA3d62ce62B468bA073093F25"
+  #   startBlock: 22288478
+  # AaveLinearPoolFactory:
+  #   address: "0xf302f9F50958c5593770FDf4d4812309fF77414f"
+  #   startBlock: 22287712
+  # ERC4626LinearPoolFactory:
+  #   address: "0xC6bD2497332d24094eC16a7261eec5C412B5a2C1"
+  #   startBlock: 25772863
 mainnet:
   network: mainnet
   Vault:
@@ -245,38 +280,3 @@ polygonGrafted:
   ERC4626LinearPoolFactory:
     address: "0xC6bD2497332d24094eC16a7261eec5C412B5a2C1"
     startBlock: 25772863
-auroratest:
-  network: aurora
-  Vault:
-    address: "0x571bb52a678C220De80f5576659E384586119289"
-    startBlock: 87972326
-  WeightedPoolFactory:
-    address: "0xE54C106638E1B8C9C28A8864f2Ef1DD69F333499"
-    startBlock: 87973033
-  WeightedPool2TokenFactory:
-    address: "0x4172d9B129A396Bc234b3d288a5fa45698C6d148"
-    startBlock: 87973040
-  StablePoolFactory:
-    address: "0x4BeEde7452b2c0274B4619C71f02f963fDD2e97E"
-    startBlock: 87973053
-  # MetaStablePoolFactory:
-  #   address: "0xdAE7e32ADc5d490a43cCba1f0c736033F2b4eFca"
-  #   startBlock: 17913016
-  # LiquidityBootstrappingPoolFactory:
-  #   address: "0x751A0bC0e3f75b38e01Cf25bFCE7fF36DE1C87DE"
-  #   startBlock: 17116402
-  # TempLiquidityBootstrappingPoolFactory:
-  #   address: "0x41B953164995c11C81DA73D212ED8Af25741b7Ac"
-  #   startBlock: 22067480
-  # InvestmentPoolFactory:
-  #   address: "0x0f7bb7ce7b6ed9366F9b6B910AdeFE72dC538193"
-  #   startBlock: 19404118
-  # StablePhantomPoolFactory:
-  #   address: "0xC128a9954e6c874eA3d62ce62B468bA073093F25"
-  #   startBlock: 22288478
-  # AaveLinearPoolFactory:
-  #   address: "0xf302f9F50958c5593770FDf4d4812309fF77414f"
-  #   startBlock: 22287712
-  # ERC4626LinearPoolFactory:
-  #   address: "0xC6bD2497332d24094eC16a7261eec5C412B5a2C1"
-  #   startBlock: 25772863

@@ -91,6 +91,10 @@ function handlePoolJoined(event: PoolBalanceChanged): void {
     return;
   }
   let tokenAddresses = pool.tokensList;
+  if (tokenAddresses.length === 0) {
+    log.warning('No tokens found in pool: {} {}', [poolId, transactionHash.toHexString()]);
+    return;
+  }
 
   let joinId = transactionHash.toHexString().concat(logIndex.toString());
   let join = new JoinExit(joinId);
@@ -180,6 +184,10 @@ function handlePoolExited(event: PoolBalanceChanged): void {
     return;
   }
   let tokenAddresses = pool.tokensList;
+  if (tokenAddresses.length === 0) {
+    log.warning('No tokens found in pool: {} {}', [poolId, transactionHash.toHexString()]);
+    return;
+  }
 
   pool.save();
 
